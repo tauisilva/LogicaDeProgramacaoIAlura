@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}   
+
+    var anoAtual = parseInt(prompt("Qual o ano atual? "));
+
+    var anoPrimeiraCopa = 1930;
+
+    while(anoPrimeiraCopa <= anoAtual){
+        mostra("Teve copa em: " + anoPrimeiraCopa)
+        anoPrimeiraCopa = anoPrimeiraCopa + 4;
+    }
+    
+        mostra("Fim!")
+
+</script>
